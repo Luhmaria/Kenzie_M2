@@ -1,34 +1,28 @@
 # Kenzie second Module
 
 <p>
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae placeat
-  deserunt illo rerum fuga voluptates quos corporis provident explicabo dolores,
-  nostrum aut ad laudantium, eum, ut eligendi? Reprehenderit, nisi perferendis.
+  Here's where sites start to get more interesting with more pages, functionalities and API consumption. I consider this module as a foundation. Here I grew as a developer strengthening my relationship with Javascipt and it's possibilities.
 </p>
 
-## Sprint 1 - [Resumo dos tópicos abordados]
+## Sprint 1 - [Scaffolding, BEM Methodology, CSS variables, Position, dialog tag]
 
 <details>
   <summary>Activities</summary>
 
-### Atividade 1 - Titulo da atividade
+### Activity S1_04 - CSS variables
 
-Objetivo do exercício: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Exercise goal: prove the advantages of using variables in CSS and provide better code maintenance
 
-`markup` `title` `hyperlink` `+`
-
-<a href="./src/S1_12/index.html"> <img src="./src/assets/images/code_button.png"> </a> &nbsp; &nbsp;
+<a href="./src/S1_04"> <img src="./src/assets/images/code_button.png"> </a> &nbsp; &nbsp;
 <a href="link_pages"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
 
 ---
 
-### Atividade 2 - Titulo da atividade
+### Activity S1_16 - Generic Institutional Website
 
-Objetivo do exercício: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Project goal: Use CSS variables in conjunction with BEM methodology to raise the quality of CSS code
 
-`markup` `title` `hyperlink` `+`
-
-<a href="./src/S1_06/index.html"> <img src="./src/assets/images/code_button.png"> </a> &nbsp; &nbsp;
+<a href="./src/S1_16/"> <img src="./src/assets/images/code_button.png"> </a> &nbsp; &nbsp;
 <a href="link_pages"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
 
 </details>
