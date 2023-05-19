@@ -37,7 +37,7 @@ Project goal: Use CSS variables in conjunction with BEM methodology to raise the
 Exercise goal: improve abilities using methods (filter and find).
 
 <a href="./src/S2_05"> <img src="./src/assets/images/code_button.png"> </a> &nbsp; &nbsp;
-<a href="link_pages"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
+<a href="https://luhmaria.github.io/Kenzie_M2/src/S2_05/index.html"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
 
 ---
 
@@ -46,7 +46,7 @@ Exercise goal: improve abilities using methods (filter and find).
 Exercise goal: improve abilities using methods (filter and includes).
 
 <a href="./src/S2_06"> <img src="./src/assets/images/code_button.png"> </a> &nbsp; &nbsp;
-<a href="link_pages"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
+<a href="https://luhmaria.github.io/Kenzie_M2/src/S2_06/index.html"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
 
 ---
 
@@ -55,7 +55,7 @@ Exercise goal: improve abilities using methods (filter and includes).
 Exercise goal: improve abilities using methods (findIndex and splice).
 
 <a href="./src/S2_07"> <img src="./src/assets/images/code_button.png"> </a> &nbsp; &nbsp;
-<a href="link_pages"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
+<a href="https://luhmaria.github.io/Kenzie_M2/src/S2_07/index.html"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
 
 ---
 
@@ -64,7 +64,7 @@ Exercise goal: improve abilities using methods (findIndex and splice).
 Exercise goal: improve abilities using methods (filter, map and reduce).
 
 <a href="./src/S2_08"> <img src="./src/assets/images/code_button.png"> </a> &nbsp; &nbsp;
-<a href="link_pages"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
+<a href="https://luhmaria.github.io/Kenzie_M2/src/S2_08/index.html"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
 
 ---
 
@@ -88,7 +88,7 @@ Project goal: understand how methods work by reproducing them from scratch.
 Exercise goal: build logic for add or remove classes of elements and use media queries.
 
 <a href="./src/S3_03"> <img src="./src/assets/images/code_button.png"> </a> &nbsp; &nbsp;
-<a href="link_pages"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
+<a href="https://luhmaria.github.io/Kenzie_M2/src/S3_03/index.html"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
 
 ---
 
@@ -125,7 +125,7 @@ Project goal: Redirect user to correct pages and render elements with API consum
 Project goal: Render elements with API consumption (PokéAPI).
 
 <a href="./src/S5_10/"> <img src="./src/assets/images/code_button.png"> </a> &nbsp; &nbsp;
-<a href="link_pages"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
+<a href="https://luhmaria.github.io/Kenzie_M2/src/S5_10/index.html"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
 
 </details>
 
