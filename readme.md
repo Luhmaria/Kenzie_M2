@@ -160,3 +160,7 @@ Project goal: summarize all tolls learned on module with different users access 
 <a href="https://kenzie-academy-brasil-developers.github.io/Kenzie-Academy-Brasil-Developers-m2-projeto-frotend-empresas-Luhmaria/"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
 
 </details>
+
+<hr />
+<p align="center">
+<b>The structure of this repository was designed and provided by @bitoller. You need to ask her if you want to apply the same template, please :)</b></p>
