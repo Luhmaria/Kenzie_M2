@@ -14,7 +14,7 @@
 Exercise goal: prove the advantages of using variables in CSS and provide better code maintenance.
 
 <a href="./src/S1_04"> <img src="./src/assets/images/code_button.png"> </a> &nbsp; &nbsp;
-<a href="link_pages"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
+<a href="https://luhmaria.github.io/Kenzie_M2/src/S1_04/index.html"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
 
 ---
 
