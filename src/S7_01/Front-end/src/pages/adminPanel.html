@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/globalStyles.css" />
+    <link rel="stylesheet" href="../styles/adminPanel.css" />
+    <title>Kenzie Empresas - Painel do Administrador</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <img class="header__logo" src="../assets/images/Logo.svg" />
+        <button class="button-style text1 header__button">Logout</button>
+      </div>
+    </header>
+    <main>
+      <section class="departments">
+        <header class="departments__header">
+          <h2 class="title3 bolder">Departamentos</h2>
+          <select class="title1 departments__select" name="" id="company"></select>
+          <button class="button-style text1 departments__button" data-action="create-depart">
+            <img src="../assets/images/addIcon.svg" alt="">
+            Criar
+          </button>
+        </header>
+        <ul></ul>
+      </section>
+      <section class="users">
+        <header class="users__header">
+          <h2 class="title3 bolder">Usuários cadastrados</h2>
+        </header>
+        <ul></ul>
+      </section>
+    </main>
+    <dialog id="manage">
+      <button class="modal__close">X</button>
+      <div class="modal__content modal__content--manage">
+        <h2 data-id="depart-name" class="title5 bolder">Nome do departamento</h2>
+        <header>
+          <div class="manage__info">
+            <p data-id="depart-description" class="title1 bolder"></p>
+            <p data-id="depart-company" class="text1"></p>
+          </div>
+          <form class="manage__form">
+            <select class="select-style text1" required name="" id="admissable-users">
+            </select>
+            <button data-action="hire" class="button-style form__button text1">Contratar</button>
+          </form>
+        </header>
+        <ul class="manage__employees">
+        </ul>
+      </div>
+    </dialog>
+    <dialog id="delete">
+      <button class="modal__close">X</button>
+      <div class="modal__content">
+        <p class="title3 bolder delete__description"></p>
+        <button data-action="delete" class="delete__button button-style text1 bolder">Confirmar</button>
+      </div>
+    </dialog>
+    <dialog id="edit-user">
+      <button class="modal__close">X</button>
+      <form class="modal__content">
+        <legend class="title5 bolder">Editar Usuário</legend>
+        <select class="select-style text1" required name="" id="kind-of-work">
+          <option value="">Selecionar modalidade de trabalho</option>
+          <option value="home office">Home Office</option>
+          <option value="presencial">Presencial</option>
+          <option value="hibrido">Hibrido</option>
+        </select>
+        <select class="select-style text1" required name="" id="professional-level">
+          <option value="">Selecionar Nível Profissional</option>
+          <option value="júnior">Júnior</option>
+          <option value="pleno">Pleno</option>
+          <option value="sênior">Sênior</option>
+          <option value="estágio">Estágio</option>
+        </select>
+        <button data-action="edit-user" class="edit__button button-style text1">Editar</button>
+      </form>
+    </dialog>
+    <dialog id="edit-depart">
+      <button class="modal__close">X</button>
+      <div class="modal__content">
+        <h2 class="title5 bolder">Editar Departamento</h2>
+        <textarea class="input-style text1 edit-textarea" name="" id=""> </textarea>
+        <button class="edit__button button-style text1">Salvar alterações</button>
+      </div>
+    </dialog>
+    <dialog id="create-depart">
+      <button class="modal__close">X</button>
+      <form class="modal__content">
+        <h2 class="title5 bolder">Criar Departamento</h2>
+        <input class="input-style text1" required type="text" placeholder="Nome do departamento" />
+        <textarea class="input-style text1"
+          required
+          name=""
+          id=""
+          placeholder="Descrição do departamento"
+        ></textarea>
+        <select class="select-style text1 create-depart__select"  required name="" id=""></select>
+        <button class="edit__button button-style text1 create-depart__button">Criar o departamento</button>
+      </form>
+    </dialog>
+    <script type="module" src="../scripts/adminPanel.js"></script>
+  </body>
+</html>

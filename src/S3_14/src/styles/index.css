@@ -1,0 +1,216 @@
+.main-container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.header__container{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 0 auto;
+    height: 100%;
+}
+.header{
+    height: 3.75rem;
+    width: 100%;
+    background-color: var(--grey1);
+    color: var(--whiteFixed);
+    margin-bottom: 2rem;
+    position: sticky;
+    top:0;
+}
+.header__logo{
+    height: 50%;
+}
+.header__out{
+    cursor: pointer;
+}
+.user{
+    height: 3.44rem;
+    display: flex;
+    align-items: center;
+    padding-block: 1rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.user__image{
+    height: 3.125rem;
+}
+.user__info{
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.user__stack{
+    color: var(--grey2);
+}
+.follow-button{
+    font-weight: 600;
+    margin-bottom: 1rem;
+    min-width: max-content;
+    padding: 0.3rem 1.5rem;
+    border: 0.0625rem solid var(--grey1);
+    background-color: transparent;
+    border-radius: var(--border2);
+}
+.follow-button:hover{
+    transition: 0.5s;
+    background-color: var(--ligthBlue);
+    border-color: var(--primaryBlue);
+    color: var(--primaryBlue);
+}
+.follow-button--active{
+    transition: 1s;
+    background-color: var(--primaryBlue);
+    border-color: var(--primaryBlue);
+    color: var(--whiteFixed);
+}
+
+.newPost{
+    width: 90%;
+    margin: 0 auto;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+}
+.newPost__content{
+    width: 100%;
+    border: 0.125rem solid var(--grey4);
+    padding: 0.5rem;
+}
+.newPost__content--text{
+   height: 50%;
+   resize: none;
+}
+.newPost__button{
+    font-weight: 600;
+    height: 13%;
+    padding: 0.8rem;
+    border-radius: var(--borderDefault);
+    align-self: flex-end;
+    color: var(--whiteFixed);
+    background-color: var(--primaryBlue);
+}
+.newPost__button:hover{
+    background-color: var(--secundaryBlue);
+}
+.sugestions__title{
+    margin-bottom: 2rem;
+}
+.sugestions__container{
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    overflow-x: scroll;
+}
+.posts-title{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.posts{
+    min-height: 25rem;
+}
+.post{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 25rem;
+    width: 90%;
+    margin-bottom: 1.5rem;
+    max-width: 1200px;
+}
+.post__title{
+    max-height: 7.5rem;
+    text-overflow: clip;
+    overflow: hidden;
+    line-height: 2.5rem;
+}
+.post__content{
+    color: var(--grey2);
+    max-height: 7rem;
+    text-overflow: clip;
+    overflow: hidden;
+}
+.post__info{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+}
+.post__button{
+    width: 50%;
+    padding: 0.8rem;
+    background-color:var(--grey1);
+    color: var(--whiteFixed);
+    border-radius:var(--borderDefault);
+}
+.post__button:hover{
+    background-color: var(--grey0);
+}
+.post__like{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 35%;
+}
+.post__like > img{
+    cursor: pointer;
+}
+dialog {
+    border-radius: 0.5rem;
+    padding-inline: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    border: transparent;
+    min-height: fit-content;
+    max-height: 70vh;
+    width: 90vw;
+    margin: 3rem auto;
+}
+
+.modal__button{
+    border-radius: 50%;
+    padding: 0.8rem;
+    position: absolute;
+    top:1rem;
+    right: 1rem;
+    background-color:var(--grey5);
+    color: var(--grey3);
+}
+.post__content--modal{
+    max-height: max-content;
+}
+.post--modal{
+    height: max-content;
+    gap: 2.5rem;
+    width: 100%;
+}
+.post__title--modal{
+    max-height: max-content;
+}
+.modal__container{
+    margin: 0 auto;
+    max-height: max-content;
+    width: 95%;
+}
+
+.newPost__content:focus{
+    outline: auto;
+    outline-color: var(--primaryBlue);
+}
+
+
+

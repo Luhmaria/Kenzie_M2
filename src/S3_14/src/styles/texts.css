@@ -1,0 +1,25 @@
+.title1{
+    font-weight: 700;
+    font-size: var(--titleSize1);
+    line-height:var(-titleHeight1);
+}
+.title2{
+    font-weight: 600;
+    font-size: var(--titleSize2);
+    line-height:var(--titleHeight2); 
+}
+.text1{
+    font-weight: 400;
+    font-size: var(--textSize1);
+    line-height:var(--textHeight1) ;
+}
+.text2{
+    font-weight:400;
+    font-size:var(--textSize2) ;
+    line-height: var(textHeight2) ;
+}
+.text3{
+    font-weight: 400;
+    font-size: var(--textSize3);
+    line-height: var(--textHeight2) ;
+}

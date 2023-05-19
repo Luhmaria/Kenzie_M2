@@ -1,0 +1,212 @@
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  position: relative;
+}
+.header__logo {
+  width: 15%;
+  max-height: 40%;
+  justify-self: flex-start;
+}
+.header__button {
+  color: var(--brand1);
+}
+.header__container,
+main {
+  max-width: 90%;
+  margin-inline: auto;
+  max-width: 1200px;
+}
+.users,
+.departments {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.departments__header {
+  justify-content: space-between;
+}
+
+.departments__select {
+  border-radius: 0.9375rem;
+  padding-inline: 1rem;
+  margin-right: 3rem;
+}
+.departments__button {
+  background-color: var(--brand1);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.departments__header,
+.users__header {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+.users__header {
+  justify-content: center;
+}
+
+section > ul {
+  padding-inline: 10rem;
+  padding-block: 1.5rem;
+  height: 17rem;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem 3rem;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+section > ul > li {
+  flex-shrink: 0;
+  width: 25rem;
+  height: 10rem;
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 0.125rem solid var(--brand1);
+}
+.button__div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  justify-self: center;
+  align-self: center;
+}
+.departments :scope .button__div {
+  width: 50%;
+}
+.users :scope .button__div {
+  width: 30%;
+}
+
+.modal__content--manage {
+  height: 70vh;
+  width: 45vw;
+}
+
+.manage__info,
+.manage__form {
+  height: 5rem;
+  width: 45%;
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.select-style {
+  width: 100%;
+  padding: 0.8rem;
+  border: 0.0625rem solid #00000033;
+  color: #00000080;
+}
+.manage__form {
+  height: 7rem;
+}
+.form__button {
+  align-self: flex-end;
+  background-color: var(--success);
+  color: var(--white);
+  border: none;
+}
+.manage__employees {
+  background-color: #f8f8f8;
+  margin-top: 2rem;
+  height: 12rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  overflow-x: scroll;
+  padding-inline: 1.5rem;
+}
+.manage__employee {
+  flex-shrink: 0;
+  background-color: var(--white);
+  height: 9rem;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 0.125rem solid var(--brand1);
+}
+dialog > .modal__content > header {
+  display: flex;
+  gap: 2rem;
+}
+.employee__button {
+  align-self: center;
+  margin-block: 0.5rem;
+  border-color: var(--failure);
+  color: var(--failure);
+}
+
+#delete > .modal__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 40vw;
+}
+.delete__description,
+.delete__button {
+  text-align: center;
+  width: 85%;
+}
+.delete__button {
+  background-color: var(--success);
+  color: var(--white);
+  border: none;
+}
+.edit__button {
+  width: 100%;
+  background-color: var(--brand1);
+  color: var(--white);
+}
+#edit-user > .modal__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+#edit-depart > .modal__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 35vw;
+}
+#edit-depart > .modal__content > textarea {
+  height: 8rem;
+}
+.edit-textarea{
+width: 93%;
+}
+#create-depart > .modal__content {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+#create-depart > .modal__content > textarea {
+  height: 2rem;
+}
+.create-depart__select, .create-depart__button{
+    width: 93%;
+}

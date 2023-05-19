@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petinfo - Feed</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../src/styles/reset.css">
+    <link rel="stylesheet" href="../../src/styles/globalStyles.css">
+    <link rel="stylesheet" href="../../src/styles/feed.css">
+</head>
+<body>
+    <header>
+        <div class="header__container">
+            <h2 class="text1 header__title bolder">Petinfo</h2>
+            <nav class="user">
+                <div class="user__action">
+                    <button class="text3 user__newpost">Criar publicação</button>
+                    <img class="user__image" src="" alt="">
+                </div>
+                <div class="user__logout hidden">
+                    <h2 class="text3 bolder"></h2>
+                    <button class="text4 logout__button"> 
+                        <div class="logout__icon"></div>
+                        Sair da conta
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="feed__header">
+        <h1 class="feed__title text2 bolder">Feed</h1>
+    </div>
+    <section class="posts">
+    </section>
+    <dialog  id="post__modal">
+        <button class="modal__close">X</button>
+        <div class="modal__content modal__content--post">
+        </div>
+    </dialog>
+    <dialog  id="handlePost__modal">
+        <button class="modal__close">X</button>
+        <form class="modal__content modal__content--form">
+            <fieldset class="form__container">
+                <legend class="text2 bolder"></legend>
+                <label class="text3 bolder form__label" for="title">Titulo do post</label>
+                <input class="form__title text3" type="text" id="title" placeholder="Digite o título aqui" required>
+                <label class="text3 bolder form__label" for="content">Conteúdo do post</label>
+                <textarea class="form__text text3" id="content" placeholder="Desenvolva o conteúdo do post aqui" required></textarea>
+                <div class="modal__actions">
+                    <button class="modal__button--cancel text3">Cancelar</button>
+                    <button class="modal__button--edit text3"></button>
+                 </div>
+            </fieldset> 
+             
+        </form>
+    </dialog>
+    <dialog id="delete__modal">
+        <button class="modal__close">X</button>
+        <div class="modal__content">
+            <h2 class="text2">Confirmação de exclusão</h2>
+            <h3 class="text3 bolder delete__confirm">Tem certeza que deseja excluir este post?</h3>
+            <p class="text3 delete__text">Essa ação não poderá ser desfeita, então pedimos que tenha cautela antes de concluir</p>
+            <div class="modal__actions modal__actions--delete">
+                <button class=" modal__button--cancel text3">Cancelar</button>
+                <button class="modal__button--delete text3">Sim, excluir esse post</button>
+            </div>
+        </div>
+    </dialog>
+
+    <script type="module"src="../scripts/feed.js"></script>
+</body>
+</html>

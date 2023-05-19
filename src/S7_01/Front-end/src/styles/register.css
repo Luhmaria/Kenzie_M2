@@ -1,0 +1,156 @@
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  position: relative;
+}
+.header__container,
+main {
+  max-width: 90%;
+  margin-inline: auto;
+}
+main {
+  max-width: 90%;
+}
+.header__logo {
+  width: 50%;
+  max-height: 40%;
+  justify-self: flex-start;
+}
+.header__menu {
+  width: 14%;
+}
+
+nav {
+  background-color: var(--white);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  padding-bottom: 1rem;
+  height: 5rem;
+  z-index: 1;
+  box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.12);
+  top: 3rem;
+  right: -15px;
+}
+.menu__button {
+  color: var(--brand1);
+}
+.menu__button--blue {
+  color: var(--white);
+  background-color: var(--brand1);
+}
+.form__title {
+  margin-bottom: 1rem;
+}
+.form__select {
+  padding: 0.8rem;
+  width: 95%;
+  border: 0.0625rem solid #00000033;
+  color: #00000080;
+}
+section {
+  background: url(../assets/images/BackImage.svg) no-repeat;
+}
+main {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+  background: rgba(255, 255, 255, 0.95);
+  height: 90%;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form__container {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.form__button {
+  width: 95%;
+  background-color: var(--brand1);
+  color: var(--white);
+}
+.form__button--blue {
+  background-color: transparent;
+  color: var(--brand1);
+}
+.hidden {
+  display: none;
+}
+@media (min-width: 500px) {
+  .header__logo {
+    width: 30%;
+  }
+  .header__menu {
+    width: 8%;
+  }
+  .form__container {
+    width: 70%;
+    margin-inline: auto;
+  }
+  .form__button,
+  .form__select {
+    width: 90%;
+  }
+}
+@media (min-width: 1024px) {
+  .header__container {
+    max-width: 90%;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__logo {
+    width: 20%;
+  }
+  .menu {
+    display: flex;
+    width: 27%;
+    top: 1rem;
+    position: static;
+    height: 100%;
+    align-self: center;
+    padding: 0;
+    box-shadow: none;
+    justify-content: space-between;
+  }
+  form {
+    width: 45%;
+  }
+  .form__container {
+    width: 80%;
+    margin-inline: auto;
+  }
+  .form__button,
+  .form__select {
+    width: 93%;
+  }
+}
+@media (min-width: 1135px) {
+  .header__container {
+    max-width: 1200px;
+  }
+  .menu {
+    width: 35%;
+  }
+  .header__logo {
+    width: 15%;
+  }
+}
+@media (min-width: 1300px) {
+  .menu {
+    width: 22%;
+  }
+}

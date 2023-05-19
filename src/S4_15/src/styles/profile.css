@@ -1,0 +1,94 @@
+.main-container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 5rem;
+}
+.user-info{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9rem;
+}
+.user{
+    width: 60%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.user__image{
+    height: 5rem;
+    border-radius: 50%;
+    border: 0.2rem solid var(--color-brand-1);
+}
+.user__details{
+    height: 80%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.user__name{
+    color: var(--color-grey-6);
+    height: 35%;
+}
+.user__stack{
+    color: var(--color-grey-5);
+    height: 25%;
+}
+.change-user-button{
+    height: 25%;
+    width: 20%;
+    border-radius: var(--radius2);
+    color: var(--color-grey-6);
+    background-color: var(--color-grey-4);
+}
+.projects-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 10rem;
+}
+.project{
+    width: 48%;
+    height: 15rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: var(--radius2);
+    border: 0.085rem solid var(--color-grey-5);
+}
+.project:hover{
+    border:0.120rem solid var(--color-grey-6);
+    background-color: var(--color-grey-1);
+}
+.project:hover > .project__button{
+    background-color: var(--color-brand-1);
+    border: transparent;
+}
+.project__title{
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.project__description{
+    max-height: 4rem;
+    text-overflow: clip;
+    overflow: hidden;
+    color: var(--color-grey-5);
+}
+.project__button{
+    border: 0.125px solid var(--color-grey-6);
+    width: 30%;
+    background-color: transparent;
+    padding: 0.3rem;
+    color: var(--color-grey-6);
+    border-radius: var(--defaultRadius);
+    text-align: center;
+}
+.projects__none{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}

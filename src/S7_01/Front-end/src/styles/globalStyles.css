@@ -1,0 +1,157 @@
+:root {
+  --brand1: #4200ff;
+  --white: #ffffff;
+  --black: #000000;
+  --failure: #ce4646;
+  --success: #4ba036;
+}
+.text1 {
+  font-size: 1.125rem; /*18px*/
+  line-height: 1.375rem;
+}
+.text2 {
+  font-size: 1rem; /*16px*/
+  line-height: 1.25rem;
+}
+.text3{
+  font-size: 1.375rem; /*22px*/
+  line-height: 1.6875rem;
+}
+.text4{
+  font-size: 0.9375rem ; /*15px*/
+  line-height: 19px;
+}
+.text5{
+  font-size: 0.875rem; /*14px*/
+  line-height: 1.0625rem;
+}
+.title1 {
+  font-size: 1.25rem; /*20px*/
+  line-height: 1.875rem;
+}
+.title2 {
+  font-size: 2rem; /*32px*/
+  line-height: 3rem;
+}
+.title3{
+  font-size: 1.875rem; /*30px*/
+  line-height: 2.3125rem;
+}
+.title4{
+  font-size: 2.5rem; /*40px*/
+  line-height: 3rem;
+}
+.title5{
+  font-size: 2.25rem; /*36px*/
+  line-height: 3.375rem;
+}
+.bolder {
+  font-weight: 700;
+}
+.button-style {
+  text-align: center;
+  border: 0.125rem solid var(--brand1);
+  padding: 0.5rem 1rem;
+  height: 40px;
+  width: 120px;
+}
+.input-style{
+  height: 1rem;
+  width: 85%;
+  padding: 0.8rem;
+  border: 0.0625rem solid #00000033;
+  color: #00000080;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+header > div,
+header > form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body > header {
+  border: 0.0625rem solid #00000033;
+}
+
+.hidden {
+  display: none;
+}
+.modal__close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+::-webkit-scrollbar {
+  width: 0.4rem;
+  height: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--brand1);
+}
+.modal__content {
+  margin: 1rem;
+  min-height: 30vh;
+  min-width: 20vw;
+  max-width: 50vw;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+@keyframes toastEntrance {
+  0% {
+    transform: translateY(150%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes toastOutway {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(150%);
+    opacity: 0;
+  }
+}
+.toast {
+  min-height: 5rem;
+  width: 13rem;
+  position: absolute;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  top: 4rem;
+  left: 2rem;
+  animation: toastEntrance 2s linear;
+  color: var(--white);
+}
+.success, .failure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.success {
+  background : green;
+}
+.failure {
+   background: red;
+}
+.toast__remove {
+  animation: toastOutway 2s linear;
+}
+dialog::backdrop{
+  background: rgba(70, 35, 167, 0.13);
+}
+textarea{
+  font-family: "Inter", sans-serif;
+}

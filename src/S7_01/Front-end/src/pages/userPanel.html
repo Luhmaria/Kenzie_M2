@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/globalStyles.css">
+  <link rel="stylesheet" href="../styles/userPanel.css">
+  <title>Kenzie Empresas - Painel do Usuário</title>
+</head>
+<body>
+  <header>
+    <div class="header__container">
+      <img class="header__logo" src="../assets/images/Logo.svg" />
+      <button class="button-style text1 header__button">Logout</button>
+    </div>
+  </header>
+  <section class="user-info">
+    <h2 data-type="user-name" class="title3 bolder"></h2>
+    <div class="user-info__container">
+      <h3 data-type="user-mail"></h3>
+      <h3 data-type="user-level"></h3>
+      <h3 data-type="user-kind-of-work"></h3>
+    </div>
+    <button data-action="edit-open" class="user-info__edit"><img src="../assets/images/edit-icon.svg" alt=""></button>
+  </section>
+  <main class="hired-info">
+  </main>
+  <dialog id="edit-user">
+    <button class="modal__close"> X</button>
+    <div class="modal__content">
+      <form>
+        <fieldset>
+          <legend class="title4 bolder">Editar Perfil</legend>
+          <input class="input-style" type="text" placeholder="Seu nome" name="name">
+          <input class="input-style" type="email" placeholder="Seu e-mail" name="email">
+          <input class="input-style" type="password" placeholder="Sua senha" name="password">
+          <button class="text1 button-style modal__button" data-action="edit-user">Editar Perfil</button>
+        </fieldset>
+      </form>
+    </div>
+  </dialog>
+  <script type="module" src="../scripts/userPanel.js"></script>
+</body>
+</html>

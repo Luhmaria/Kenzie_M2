@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/globalStyles.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
+    <title>Kenzie Empresas - Login</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <img class="header__logo" src="../assets/images/Logo.svg" />
+        <button class="header__menu">
+          <img
+            data-action="toggle-menu"
+            src="../assets/images/Menu_open.svg"
+            alt=""
+          />
+        </button>
+        <nav class="hidden menu">
+          <button data-action="home" class="menu__button text1 button-style">
+            Home
+          </button>
+          <button
+            data-action="register"
+            class="button-style text1 menu__button--blue"
+          >
+            Cadastro
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <section>
+      <main>
+        <form>
+          <fieldset class="form__container">
+            <legend class="title2 bolder form__title">Login</legend>
+            <p class="form__info text1">Preencha os campos para realizar login</p>
+            <input class="text1 input-style"
+              required
+              type="email"
+              name=""
+              id="email"
+              placeholder="Seu e-mail"
+            />
+            <input class="text1 input-style"
+              required
+              type="password"
+              name=""
+              id="password"
+              placeholder="Sua senha"
+            />
+            <button data-action="login" class="text1 button-style  form__button">Login</button>
+            <p class="form__divisor">ou</p>
+            <button data-action="register" class="text1 button-style form__button form__button--blue">Cadastre-se</button>
+          </fieldset>
+        </form>
+      </main>
+    </section>
+
+    <script type="module" src="../scripts/login.js"></script>
+  </body>
+</html>

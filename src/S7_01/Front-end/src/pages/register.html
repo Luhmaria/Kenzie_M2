@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/globalStyles.css" />
+    <link rel="stylesheet" href="../styles/register.css" />
+    <title>Kenzie Empresas - Cadastro</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <img class="header__logo" src="../assets/images/Logo.svg" />
+        <button class="header__menu">
+          <img
+            data-action="toggle-menu"
+            src="../assets/images/Menu_open.svg"
+            alt=""
+          />
+        </button>
+        <nav class="hidden menu">
+          <button data-action="home" class="menu__button text1 button-style">
+            Home
+          </button>
+          <button
+            data-action="login"
+            class="button-style text1 menu__button--blue"
+          >
+            Login
+          </button>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <main>
+        <form>
+          <fieldset class="form__container">
+            <legend class="title2 bolder form__title">Cadastre-se</legend>
+            <input class="text1 input-style"
+              required
+              type="text"
+              name=""
+              id="name"
+              placeholder="Seu Nome"
+            />
+            <input class="text1 input-style"
+              required
+              type="email"
+              name=""
+              id="email"
+              placeholder="Seu e-mail"
+            />
+            <input class="text1 input-style"
+              required
+              type="password"
+              name=""
+              id="password"
+              placeholder="Sua senha"
+            />
+            <select name="" id="professionalLevel" required class="text1 form__select">
+              <option value="">Nível profissional</option>
+              <option value="júnior">Júnior</option>
+              <option value="pleno">Pleno</option>
+              <option value="sênior">Sênior</option>
+              <option value="estágio">Estágio</option>
+            </select>
+            <button data-action="register" class="text1 button-style  form__button">Cadastre-se</button>
+            <button data-action="home" class="text1 button-style form__button form__button--blue">Retornar</button>
+          </fieldset>
+        </form>
+      </main>
+    </section>
+
+    <script type="module" src="../scripts/register.js"></script>
+  </body>
+</html>

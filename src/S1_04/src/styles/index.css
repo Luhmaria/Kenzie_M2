@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+:root{
+  --corPrimaria: #60d810;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+body {
+  font-family: "inter", sans-serif;
+}
+
+.color-primary {
+  color: var(--corPrimaria);
+}
+
+.mainSection {
+  height: 100vh;
+  display: flex;
+}
+
+.mainSection-column1 {
+  width: 40%;
+  background-color: var(--corPrimaria);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainSection-column2 {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mainSection-column2-content {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mainSection-column2-content-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.button-default {
+  height: 48px;
+  padding: 0 44px;
+  background: var(--corPrimaria);
+  color: #fff;
+  font-weight: 600;
+  border: 2px solid var(--corPrimaria);
+  border-radius: 4px;
+  font-size: 20px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-default.outline {
+  background-color: transparent;
+  color:var(--corPrimaria);
+}

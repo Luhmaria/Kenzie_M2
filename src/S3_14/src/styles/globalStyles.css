@@ -1,0 +1,39 @@
+:root{
+    /* Brand Colors */
+    --primaryBlue:#4263EB;
+    --secundaryBlue:#364FC7;
+    --ligthBlue:#EDF2FF;
+    /* Grey Colors */
+    --grey0: #0A0C0D;
+    --grey1: #212529;
+    --grey2: #495057;
+    --grey3: #868E96;
+    --grey4: #DEE2E6;
+    --grey5: #F8F9FA;
+    --whiteFixed: #FFFFFF;
+
+    --titleSize1: 1.75rem;
+    --titleSize2: 1.25rem;
+    --textSize1: 1rem;
+    --textSize2: 0.875rem;
+    --textSize3: 0.75rem;
+
+    --titleHeight1: 2.5rem;
+    --titleHeight2: 1.5rem;
+    --textHeight1: 1.75rem;
+    --textHeight2: 1rem;
+
+    /* border */
+    --borderDefault: 0.25rem;
+    --border2:0.125rem;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    color: var(--grey1);
+}
+button{
+    cursor: pointer;
+}
+
