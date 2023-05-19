@@ -1,7 +1,10 @@
 import { handleMobileMenu, redirect, toast } from "./render.js";
 import { createUser } from "./requests.js";
 
-handleMobileMenu("../assets/images/Menu_open.svg","../assets/images/menu_close.svg");
+handleMobileMenu(
+  "../assets/images/Menu_open.svg",
+  "../assets/images/menu_close.svg"
+);
 
 function redirectEvents() {
   const homeButton = document.querySelectorAll("[data-action=home]");
@@ -39,9 +42,9 @@ async function createNewUser() {
         toast("E-mail já cadastrado");
       } else {
         toast("Usuário criado com sucesso!", true);
-        setTimeout(()=>{
-          window.location.replace("./login.html")
-        },3000)
+        setTimeout(() => {
+          window.location.replace("./login.html");
+        }, 3000);
         userName.value = "";
         userPassword.value = "";
         userMail.value = "";

@@ -3,7 +3,7 @@ import {
   generateSelectOptions,
   renderCompanies,
   handleMobileMenu,
-  redirect
+  redirect,
 } from "./render.js";
 
 async function handleOptions() {
@@ -24,13 +24,16 @@ async function handleOptions() {
 }
 handleOptions();
 
-handleMobileMenu("./src/assets/images/Menu_open.svg","./src/assets/images/menu_close.svg");
+handleMobileMenu(
+  "./src/assets/images/Menu_open.svg",
+  "./src/assets/images/menu_close.svg"
+);
 
-function redirectEvents(){
-  const loginButton = document.querySelector("[data-action=login]")
-  const registerButton = document.querySelector("[data-action=register]")
+function redirectEvents() {
+  const loginButton = document.querySelector("[data-action=login]");
+  const registerButton = document.querySelector("[data-action=register]");
 
-  redirect(loginButton,"./src/pages/login.html")
-  redirect(registerButton,"./src/pages/register.html")
+  redirect(loginButton, "./src/pages/login.html");
+  redirect(registerButton, "./src/pages/register.html");
 }
-redirectEvents()
+redirectEvents();

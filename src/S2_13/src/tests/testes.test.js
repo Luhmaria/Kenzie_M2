@@ -134,7 +134,9 @@ describe("testando newFind", () => {
   });
 
   test("testando quando não encontra o elemento", () => {
-    expect(newFind(arrProd, (e) => e.nome === "prod r")).toStrictEqual(undefined);
+    expect(newFind(arrProd, (e) => e.nome === "prod r")).toStrictEqual(
+      undefined
+    );
   });
 
   test("testando em um array vazio", () => {

@@ -1,7 +1,10 @@
 import { handleMobileMenu, redirect, toast } from "./render.js";
 import { getAccess, validateLogin } from "./requests.js";
 
-handleMobileMenu("../assets/images/Menu_open.svg","../assets/images/menu_close.svg");
+handleMobileMenu(
+  "../assets/images/Menu_open.svg",
+  "../assets/images/menu_close.svg"
+);
 
 function redirectEvents() {
   const homeButton = document.querySelector("[data-action=home]");
@@ -40,7 +43,7 @@ async function doLogin() {
 
         const isAdmin = await validateLogin(token.token);
 
-        if (isAdmin) { 
+        if (isAdmin) {
           window.location.replace("./adminPanel.html");
         } else {
           window.location.replace("./userPanel.html");

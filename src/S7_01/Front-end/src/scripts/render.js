@@ -27,19 +27,19 @@ export function generateSelectOptions(select, optionsData) {
 
 export function renderCompany({ name, opening_hours, sectors }) {
   const company = document.createElement("li");
-  company.classList.add("companies__item")
+  company.classList.add("companies__item");
 
   const companyName = document.createElement("h2");
   companyName.innerText = name;
-  companyName.classList.add("title1","bolder","companies__name")
+  companyName.classList.add("title1", "bolder", "companies__name");
 
   const companyOpening = document.createElement("p");
   companyOpening.innerText = opening_hours;
-  companyOpening.classList.add("text2")
+  companyOpening.classList.add("text2");
 
   const companySector = document.createElement("h3");
   companySector.innerText = sectors.description;
-  companySector.classList.add("text2", "companies__sector")
+  companySector.classList.add("text2", "companies__sector");
 
   company.append(companyName, companyOpening, companySector);
 
@@ -59,16 +59,16 @@ export async function renderCompanies(all = false, sector) {
     list.appendChild(companyElement);
   });
 }
-export function handleMobileMenu(openSrc,closeSrc) {
+export function handleMobileMenu(openSrc, closeSrc) {
   const controller = document.querySelector("header > div > button");
   const hiddenMenu = document.querySelector(".hidden");
-  const menuImg = document.querySelector("[data-action=toggle-menu]")
+  const menuImg = document.querySelector("[data-action=toggle-menu]");
   controller.addEventListener("click", (event) => {
     hiddenMenu.classList.toggle("hidden");
     if (hiddenMenu.classList.contains("hidden")) {
-      menuImg.src = openSrc
+      menuImg.src = openSrc;
     } else {
-      menuImg.src = closeSrc
+      menuImg.src = closeSrc;
     }
   });
 }
@@ -85,7 +85,7 @@ export function toast(text, success = false) {
   toast.classList.add("toast");
 
   const toastInfo = document.createElement("h2");
-  toastInfo.classList.add("text5","bolder")
+  toastInfo.classList.add("text5", "bolder");
   toastInfo.innerText = text;
 
   if (success) {
@@ -109,25 +109,25 @@ function renderDepartmentCard({ name, description, companies, uuid }) {
   const departmentCard = document.createElement("li");
 
   const departmentName = document.createElement("h2");
-  departmentName.classList.add("title1","bolder")
+  departmentName.classList.add("title1", "bolder");
   departmentName.innerText = name;
 
   const departmentDescription = document.createElement("p");
-  departmentDescription.classList.add("text1")
+  departmentDescription.classList.add("text1");
   departmentDescription.innerText = description;
 
   const companyDepartment = document.createElement("p");
-  companyDepartment.classList.add("text1")
+  companyDepartment.classList.add("text1");
   companyDepartment.innerText = companies.name;
 
   const buttonsContainer = document.createElement("div");
   buttonsContainer.classList.add("button__div");
 
   const manageButton = document.createElement("button");
-  const manageButtonIcon = document.createElement("img")
+  const manageButtonIcon = document.createElement("img");
   manageButtonIcon.dataset.id = uuid;
-  manageButtonIcon.src = "../assets/images/manageIcon.svg"
-  manageButton.appendChild(manageButtonIcon)
+  manageButtonIcon.src = "../assets/images/manageIcon.svg";
+  manageButton.appendChild(manageButtonIcon);
   const managementModal = document.querySelector("#manage");
   openModal(manageButtonIcon, managementModal);
   manageButtonIcon.addEventListener("click", async (event) => {
@@ -135,10 +135,10 @@ function renderDepartmentCard({ name, description, companies, uuid }) {
   });
 
   const editButton = document.createElement("button");
-  const editButtonIcon = document.createElement("img")
+  const editButtonIcon = document.createElement("img");
   editButtonIcon.dataset.id = uuid;
-  editButtonIcon.src = "../assets/images/edit-icon-black.svg"
-  editButton.appendChild(editButtonIcon)
+  editButtonIcon.src = "../assets/images/edit-icon-black.svg";
+  editButton.appendChild(editButtonIcon);
   editButtonIcon.dataset.id = uuid;
   const editModal = document.querySelector("#edit-depart");
   openModal(editButtonIcon, editModal);
@@ -147,10 +147,10 @@ function renderDepartmentCard({ name, description, companies, uuid }) {
   });
 
   const deleteButton = document.createElement("button");
-  const deleteButtonIcon = document.createElement("img")
+  const deleteButtonIcon = document.createElement("img");
   deleteButtonIcon.dataset.id = uuid;
-  deleteButtonIcon.src = "../assets/images/delete-icon.svg"
-  deleteButton.appendChild(deleteButtonIcon)
+  deleteButtonIcon.src = "../assets/images/delete-icon.svg";
+  deleteButton.appendChild(deleteButtonIcon);
   deleteButtonIcon.dataset.id = uuid;
   const deleteModal = document.querySelector("#delete");
   openModal(deleteButtonIcon, deleteModal);
@@ -219,15 +219,15 @@ export async function createUserCard({
   const userCard = document.createElement("li");
 
   const userName = document.createElement("h2");
-  userName.classList.add("title1","bolder")
+  userName.classList.add("title1", "bolder");
   userName.innerText = username;
 
   const userLevel = document.createElement("p");
-  userLevel.classList.add("text1")
+  userLevel.classList.add("text1");
   userLevel.innerText = capitalizeInfo(professional_level);
 
   const userCompany = document.createElement("p");
-  userCompany.classList.add("text1")
+  userCompany.classList.add("text1");
   if (department_uuid == null) {
     userCompany.innerText = "Disponível para contratação";
   } else {
@@ -242,10 +242,10 @@ export async function createUserCard({
   buttonsContainer.classList.add("button__div");
 
   const editButton = document.createElement("button");
-  const editButtonIcon = document.createElement("img")
+  const editButtonIcon = document.createElement("img");
   editButtonIcon.dataset.id = uuid;
-  editButtonIcon.src = "../assets/images/edit-icon.svg"
-  editButton.appendChild(editButtonIcon)
+  editButtonIcon.src = "../assets/images/edit-icon.svg";
+  editButton.appendChild(editButtonIcon);
   const editableInfo = {
     kind_of_work: kind_of_work,
     professional_level: professional_level,
@@ -259,10 +259,10 @@ export async function createUserCard({
   });
 
   const deleteButton = document.createElement("button");
-  const deleteButtonIcon = document.createElement("img")
+  const deleteButtonIcon = document.createElement("img");
   deleteButtonIcon.dataset.id = uuid;
-  deleteButtonIcon.src = "../assets/images/delete-icon.svg"
-  deleteButton.appendChild(deleteButtonIcon)
+  deleteButtonIcon.src = "../assets/images/delete-icon.svg";
+  deleteButton.appendChild(deleteButtonIcon);
   const deleteModal = document.querySelector("#delete");
   openModal(deleteButtonIcon, deleteModal);
   deleteButtonIcon.addEventListener("click", async (event) => {
@@ -359,9 +359,9 @@ function renderEditUserContent(userInfo) {
 
   const kindOfWork = editUserModal.querySelector("#kind-of-work");
   const professionalLevel = editUserModal.querySelector("#professional-level");
-  if(userInfo.kind_of_work == null){
-    kindOfWork.value = ""
-  }else{
+  if (userInfo.kind_of_work == null) {
+    kindOfWork.value = "";
+  } else {
     kindOfWork.value = userInfo.kind_of_work;
   }
   professionalLevel.value = userInfo.professional_level;
@@ -430,18 +430,18 @@ async function createEmployeeCard({
     managementModal.querySelector("#admissable-users");
 
   const employeeCard = document.createElement("li");
-  employeeCard.classList.add("manage__employee")
+  employeeCard.classList.add("manage__employee");
 
   const userName = document.createElement("h2");
-  userName.classList.add("title1","bolder")
+  userName.classList.add("title1", "bolder");
   userName.innerText = username;
 
   const userLevel = document.createElement("p");
-  userLevel.classList.add("text1")
+  userLevel.classList.add("text1");
   userLevel.innerText = capitalizeInfo(professional_level);
 
   const userCompany = document.createElement("p");
-  userCompany.classList.add("text1")
+  userCompany.classList.add("text1");
   const departments = await getAllDepartments();
   const currentDepartment = departments.find(
     (departments) => departments.uuid == department_uuid
@@ -451,7 +451,7 @@ async function createEmployeeCard({
   const dismissButton = document.createElement("button");
   dismissButton.innerText = "Desligar";
   dismissButton.dataset.id = uuid;
-  dismissButton.classList.add("button-style", "employee__button","bolder")
+  dismissButton.classList.add("button-style", "employee__button", "bolder");
   dismissButton.addEventListener("click", async (event) => {
     const dismiss = await dismissEmployee(event.target.dataset.id);
     if (!Object.hasOwn(dismiss, "error")) {
@@ -575,11 +575,11 @@ export async function renderCoworkersSection() {
     if (coWorkers.length == 0) {
       const warning = document.createElement("h2");
       warning.innerText = "Você é o único contratado neste departamento";
-      warning.classList.add("title4", "bolder","hired-info__warning")
+      warning.classList.add("title4", "bolder", "hired-info__warning");
       coworkersSection.appendChild(warning);
     } else {
       const coworkersList = document.createElement("ul");
-      coworkersList.classList.add("hired-info__coworkers")
+      coworkersList.classList.add("hired-info__coworkers");
       coWorkers.forEach((coworker) => {
         const card = createCoworkerCard(coworker);
         coworkersList.appendChild(card);
@@ -589,20 +589,20 @@ export async function renderCoworkersSection() {
   } else {
     const warning = document.createElement("h2");
     warning.innerText = "Você ainda não foi contratado";
-    warning.classList.add("title4", "bolder", "hired-info__warning")
+    warning.classList.add("title4", "bolder", "hired-info__warning");
     coworkersSection.appendChild(warning);
   }
 }
 function createCoworkerCard({ username, professional_level }) {
   const card = document.createElement("li");
-  card.classList.add("hired-info__coworker")
+  card.classList.add("hired-info__coworker");
 
   const coworkerName = document.createElement("h2");
-  coworkerName.classList.add("text4","bolder")
+  coworkerName.classList.add("text4", "bolder");
   coworkerName.innerText = username;
 
   const coworkerLevel = document.createElement("p");
-  coworkerLevel.classList.add("text4")
+  coworkerLevel.classList.add("text4");
   coworkerLevel.innerText = capitalizeInfo(professional_level);
 
   card.append(coworkerName, coworkerLevel);
@@ -620,7 +620,7 @@ async function createCoworkerSectionHeader() {
 
   const header = document.createElement("header");
   header.innerText = headerInfo;
-  header.classList.add("title2", "bolder","hired-info__company")
+  header.classList.add("title2", "bolder", "hired-info__company");
 
   return header;
 }

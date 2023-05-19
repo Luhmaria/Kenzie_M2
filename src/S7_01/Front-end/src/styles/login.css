@@ -81,7 +81,7 @@ form {
   flex-direction: column;
   justify-content: space-around;
 }
-.form__info{
+.form__info {
   width: 100%;
 }
 .form__button {
@@ -93,7 +93,7 @@ form {
   background-color: transparent;
   color: var(--brand1);
 }
-.form__divisor{
+.form__divisor {
   width: 100%;
   text-align: center;
 }
@@ -153,7 +153,6 @@ form {
   }
 }
 @media (min-width: 1135px) {
-  
   .menu {
     width: 25%;
   }
@@ -166,7 +165,8 @@ form {
     width: 20%;
   }
   .form__button,
-  .form__select, .form__divisor {
+  .form__select,
+  .form__divisor {
     width: 91%;
   }
 }

@@ -13,15 +13,15 @@
   font-size: 1rem; /*16px*/
   line-height: 1.25rem;
 }
-.text3{
+.text3 {
   font-size: 1.375rem; /*22px*/
   line-height: 1.6875rem;
 }
-.text4{
-  font-size: 0.9375rem ; /*15px*/
+.text4 {
+  font-size: 0.9375rem; /*15px*/
   line-height: 19px;
 }
-.text5{
+.text5 {
   font-size: 0.875rem; /*14px*/
   line-height: 1.0625rem;
 }
@@ -33,15 +33,15 @@
   font-size: 2rem; /*32px*/
   line-height: 3rem;
 }
-.title3{
+.title3 {
   font-size: 1.875rem; /*30px*/
   line-height: 2.3125rem;
 }
-.title4{
+.title4 {
   font-size: 2.5rem; /*40px*/
   line-height: 3rem;
 }
-.title5{
+.title5 {
   font-size: 2.25rem; /*36px*/
   line-height: 3.375rem;
 }
@@ -55,7 +55,7 @@
   height: 40px;
   width: 120px;
 }
-.input-style{
+.input-style {
   height: 1rem;
   width: 85%;
   padding: 0.8rem;
@@ -134,24 +134,25 @@ body::-webkit-scrollbar {
   animation: toastEntrance 2s linear;
   color: var(--white);
 }
-.success, .failure{
+.success,
+.failure {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .success {
-  background : green;
+  background: green;
 }
 .failure {
-   background: red;
+  background: red;
 }
 .toast__remove {
   animation: toastOutway 2s linear;
 }
-dialog::backdrop{
+dialog::backdrop {
   background: rgba(70, 35, 167, 0.13);
 }
-textarea{
+textarea {
   font-family: "Inter", sans-serif;
 }

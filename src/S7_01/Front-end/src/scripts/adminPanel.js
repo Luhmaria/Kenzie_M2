@@ -8,7 +8,7 @@ import {
   selectCurrentModalClose,
   renderDepartmentCreationModal,
   renderDepartments,
-  managementModalEvents
+  managementModalEvents,
 } from "./render.js";
 import {
   validateUser,
@@ -17,7 +17,7 @@ import {
   updateDepartmentDescription,
   deleteDepartment,
   deleteEmployeeInfo,
-  updateEmployeeInfo
+  updateEmployeeInfo,
 } from "./requests.js";
 
 function logoutEvent() {
@@ -162,7 +162,7 @@ async function deleteAction(department = true, ID) {
     await deleteDepartment(ID);
     toast("Departamento excluído com sucesso", true);
     renderDepartments();
-    renderUsersSection()
+    renderUsersSection();
   } else {
     await deleteEmployeeInfo(ID);
     toast("Usuário excluído com sucesso", true);
@@ -184,37 +184,37 @@ async function deleteEvents() {
 }
 deleteEvents();
 
-async function editUserInfo(employeeID){
+async function editUserInfo(employeeID) {
   const editUserModal = document.querySelector("#edit-user");
 
-  const kindOfWork = editUserModal.querySelector("#kind-of-work")
-  const professionalLevel = editUserModal.querySelector("#professional-level")
+  const kindOfWork = editUserModal.querySelector("#kind-of-work");
+  const professionalLevel = editUserModal.querySelector("#professional-level");
 
   const newInfo = {
     kind_of_work: kindOfWork.value,
-    professional_level: professionalLevel.value
-  }
-  const result = await updateEmployeeInfo(employeeID,newInfo)
+    professional_level: professionalLevel.value,
+  };
+  const result = await updateEmployeeInfo(employeeID, newInfo);
 
-  return result
+  return result;
 }
 
-async function editUserEvent(){
+async function editUserEvent() {
   const editUserModal = document.querySelector("#edit-user");
-  const form = editUserModal.querySelector("form")
+  const form = editUserModal.querySelector("form");
   const actionButton = editUserModal.querySelector("[data-action=edit-user]");
   actionButton.addEventListener("click", async (event) => {
-    if(form.checkValidity()){
-      event.preventDefault()
-      const updated = await editUserInfo(event.target.dataset.id)
-      if(!Object.hasOwn(updated, "error")){
-        toast("Informações atualizadas com sucesso!", true)
-        await renderUsersSection()
-        editUserModal.close()
+    if (form.checkValidity()) {
+      event.preventDefault();
+      const updated = await editUserInfo(event.target.dataset.id);
+      if (!Object.hasOwn(updated, "error")) {
+        toast("Informações atualizadas com sucesso!", true);
+        await renderUsersSection();
+        editUserModal.close();
       }
     }
-  })
+  });
 }
-editUserEvent()
+editUserEvent();
 
 managementModalEvents();

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 
-:root{
+:root {
   --corPrimaria: #60d810;
 }
 * {
@@ -75,5 +75,5 @@ body {
 
 .button-default.outline {
   background-color: transparent;
-  color:var(--corPrimaria);
+  color: var(--corPrimaria);
 }

@@ -1,4 +1,3 @@
-
 const baseURL = "http://localhost:6278";
 const token = localStorage.getItem("@kenzieEmpresas:token");
 const requestHeaders = {
@@ -101,7 +100,6 @@ export async function getDepartmentCoworkers() {
   return coworkers;
 }
 
-
 export async function getCurrentUserCompanyDepartments() {
   const request = await fetch(`${baseURL}/users/departments`, {
     method: "GET",
@@ -123,7 +121,6 @@ export async function updateCurrentUserInfo(userNewInfo) {
   return userInfo;
 }
 
-
 export async function getAllUsers() {
   const request = await fetch(`${baseURL}/users`, {
     method: "GET",
@@ -133,7 +130,6 @@ export async function getAllUsers() {
 
   return users;
 }
-
 
 export async function getAdmissibleUsers() {
   const request = await fetch(`${baseURL}/admin/out_of_work`, {
@@ -246,4 +242,3 @@ export async function deleteDepartment(departmentID) {
     headers: requestHeaders,
   });
 }
-

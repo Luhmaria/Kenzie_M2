@@ -1,8 +1,8 @@
-function redirect(){
-    const redirectButton = document.querySelector("button")
+function redirect() {
+  const redirectButton = document.querySelector("button");
 
-    redirectButton.addEventListener("click", (event)=>{
-        window.location.replace("../../index.html")
-    })
+  redirectButton.addEventListener("click", (event) => {
+    window.location.replace("../../index.html");
+  });
 }
-redirect()
+redirect();

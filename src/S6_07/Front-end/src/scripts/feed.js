@@ -5,18 +5,17 @@ import {
   handleModal,
   formModalAction,
   closeModal,
-  deleteModalAction
+  deleteModalAction,
 } from "./render.js";
 
-function routeProtection (){
+function routeProtection() {
+  const token = localStorage.getItem("@petinfo:token");
 
-  const token = localStorage.getItem("@petinfo:token")
-
-  if(token == null){
-      window.location.replace("../../index.html")
+  if (token == null) {
+    window.location.replace("../../index.html");
   }
 }
-routeProtection()
+routeProtection();
 
 function openNewPublication() {
   const openButton = document.querySelectorAll(".user__newpost");
@@ -57,15 +56,14 @@ openNewPublication();
 logoutEvent();
 renderAllPosts();
 
-function modalEvents(){
-  const allDialog = document.querySelectorAll("dialog")
-  allDialog.forEach(dialog =>{
-    closeModal(dialog.id)
-  })
+function modalEvents() {
+  const allDialog = document.querySelectorAll("dialog");
+  allDialog.forEach((dialog) => {
+    closeModal(dialog.id);
+  });
 }
-modalEvents()
+modalEvents();
 
-deleteModalAction()
+deleteModalAction();
 
-formModalAction()
-
+formModalAction();

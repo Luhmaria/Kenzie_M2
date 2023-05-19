@@ -69,15 +69,17 @@ main {
   background-color: transparent;
   border: 0.0625rem solid var(--gray600);
 }
-.register__submit,.redirect__button {
+.register__submit,
+.redirect__button {
   margin-bottom: 1rem;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
-.register__submit:hover{
+.register__submit:hover {
   background-color: var(--brand200);
 }
-.redirect__button:hover,.header__button:hover{
+.redirect__button:hover,
+.header__button:hover {
   background-color: var(--gray800);
 }

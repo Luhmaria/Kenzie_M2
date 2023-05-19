@@ -1,4 +1,3 @@
-
 .header__container {
   display: flex;
   align-items: center;
@@ -194,8 +193,8 @@ dialog > .modal__content > header {
 #edit-depart > .modal__content > textarea {
   height: 8rem;
 }
-.edit-textarea{
-width: 93%;
+.edit-textarea {
+  width: 93%;
 }
 #create-depart > .modal__content {
   width: 30vw;
@@ -207,6 +206,7 @@ width: 93%;
 #create-depart > .modal__content > textarea {
   height: 2rem;
 }
-.create-depart__select, .create-depart__button{
-    width: 93%;
+.create-depart__select,
+.create-depart__button {
+  width: 93%;
 }

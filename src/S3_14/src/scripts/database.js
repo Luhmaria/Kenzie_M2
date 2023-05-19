@@ -44,21 +44,21 @@ export const posts = [
       img: "./src/assets/img/user2.svg",
     },
     likes: 25,
-    liked:false
+    liked: false,
   },
   {
     id: 2,
     title:
       "Programa de estágio abre vagas em Segurança da Informação com regime remoto",
     text: "Em Segurança da Informação, as vagas são destinadas às áreas de Security Operations Center (SOC), Administração de Dispositivos de Segurança (ADS), Resposta a Incidentes (RI), Segurança e Privacidade e Consultoria Técnica. O candidato interessado deverá estar matriculado em um curso superior em Ciência da Computação, Segurança da Informação, Tecnologia da Informação e afins, com previsão de conclusão do curso de fevereiro de 2023 a fevereiro de 2025.",
-    userInfo:{
+    userInfo: {
       id: 4,
       user: "Carla Maria",
       stack: "Back end Engineer",
       img: "./src/assets/img/user4.svg",
     },
     likes: 19,
-    liked:false
+    liked: false,
   },
   {
     id: 3,
@@ -71,7 +71,7 @@ export const posts = [
       img: "./src/assets/img/user5.svg",
     },
     likes: 8,
-    liked:false
+    liked: false,
   },
 ];
 
@@ -80,7 +80,7 @@ export const suggestUsers = [
     id: 1,
     user: "Carlos Lima",
     stack: "UX e UI Designer",
-    img: "./src/assets/img/user3.svg",    
+    img: "./src/assets/img/user3.svg",
   },
   {
     id: 2,
@@ -95,5 +95,3 @@ export const suggestUsers = [
     img: "./src/assets/img/user7.svg",
   },
 ];
-
-

@@ -4,15 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- CSS -->
     <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/globalStyles.css" />
     <link rel="stylesheet" href="./src/styles/texts.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
     <link rel="stylesheet" href="./src/styles/responsivity.css" />
-
-    <!-- FONTE -->
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,29 +23,39 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <img class="header__logo" src="src/assets/img/logo.svg" alt="Logo TechPosters"></img>
+        <img
+          class="header__logo"
+          src="src/assets/img/logo.svg"
+          alt="Logo TechPosters"
+        />
         <small class="header__out text3">Sair</small>
       </div>
     </header>
     <main class="main-container">
       <section class="start-container">
         <form class="newPost">
-          <input class="newPost__content  type="text" placeholder="Digite o título do post" required>
-          <textarea placeholder="Digite a descrição do post" class="newPost__content newPost__content--text" name="" id="" cols="30" rows="10" required></textarea>
+          <input class="newPost__content type="text" placeholder="Digite o
+          título do post" required>
+          <textarea
+            placeholder="Digite a descrição do post"
+            class="newPost__content newPost__content--text"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
           <button class="newPost__button text2" type="submit">Postar</button>
         </form>
         <div class="sugestions">
           <h2 class="title2 sugestions__title">Sugestões para você seguir</h2>
-          <section class="sugestions__container">
-          </section>
+          <section class="sugestions__container"></section>
         </div>
       </section>
       <h2 class="title1 posts-title">Posts</h2>
-      <section class="posts">
-    </section>
+      <section class="posts"></section>
     </main>
-  <dialog id="modal">
-  </dialog>
+    <dialog id="modal"></dialog>
     <script type="module" src="./src/scripts/index.js"></script>
   </body>
 </html>

@@ -56,10 +56,10 @@ section {
   background: url(../assets/images/BackImage.svg) no-repeat;
 }
 main {
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 form {
   background: rgba(255, 255, 255, 0.95);

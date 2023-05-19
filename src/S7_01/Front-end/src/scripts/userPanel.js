@@ -4,9 +4,9 @@ import {
   renderEditionUserModal,
   renderCoworkersSection,
   renderUserHeader,
-  toast
+  toast,
 } from "./render.js";
-import { validateUser,updateCurrentUserInfo } from "./requests.js";
+import { validateUser, updateCurrentUserInfo } from "./requests.js";
 function logoutEvent() {
   const logoutButton = document.querySelector("header > div > button");
 
@@ -51,15 +51,15 @@ function editModalEvents() {
     if (form.checkValidity()) {
       event.preventDefault();
       const updateInfo = {
-        username:userName.value,
-        password:userPassword.value,
-        email:userMail.value
-      }
-      const result = await updateCurrentUserInfo(updateInfo)
-      if(!Object.hasOwn(result, "error")){
-        toast("Informações atualizadas com sucesso", true)
-        editionModal.close()
-        renderUserHeader()
+        username: userName.value,
+        password: userPassword.value,
+        email: userMail.value,
+      };
+      const result = await updateCurrentUserInfo(updateInfo);
+      if (!Object.hasOwn(result, "error")) {
+        toast("Informações atualizadas com sucesso", true);
+        editionModal.close();
+        renderUserHeader();
       }
     }
   });
@@ -67,4 +67,4 @@ function editModalEvents() {
 editModalEvents();
 renderEditionUserModal();
 renderCoworkersSection();
-renderUserHeader()
+renderUserHeader();
