@@ -154,6 +154,7 @@ Project goal: summarize all tolls learned until this point: API consumption, use
 Project goal: summarize all tolls learned on module with different users access and visualisations.
 
 ->Administrator access to the site grants permissions for hiring and firing employees, in addition to registering sectors.
+<br/>
 ->Employee user can view their teammates and edit their personal information.
 
 <a href="./src/S7_01/"> <img src="./src/assets/images/code_button.png"> </a> &nbsp; &nbsp;
