@@ -23,7 +23,7 @@ Exercise goal: prove the advantages of using variables in CSS and provide better
 Project goal: Use CSS variables in conjunction with BEM methodology to raise the quality of CSS code.
 
 <a href="./src/S1_16/"> <img src="./src/assets/images/code_button.png"> </a> &nbsp; &nbsp;
-<a href="link_pages"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
+<a href="https://kenzie-academy-brasil-developers.github.io/Kenzie-Academy-Brasil-Developers-m2-criando-site-institucional-generico-Luhmaria/"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
 
 </details>
 
@@ -73,7 +73,6 @@ Exercise goal: improve abilities using methods (filter, map and reduce).
 Project goal: understand how methods work by reproducing them from scratch.
 
 <a href="./src/S2_13"> <img src="./src/assets/images/code_button.png"> </a> &nbsp; &nbsp;
-<a href="link_pages"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
 
 ---
 
@@ -98,7 +97,7 @@ Exercise goal: build logic for add or remove classes of elements and use media q
 Project goal: Apply mobile first and all responsiveness tools for achieve best user experience and use ES Modules.
 
 <a href="./src/S3_14/"> <img src="./src/assets/images/code_button.png"> </a> &nbsp; &nbsp;
-<a href="link_pages"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
+<a href="https://kenzie-academy-brasil-developers.github.io/-Kenzie-Academy-Brasil-Developers-Sprint-03-criando-rede-social-Luhmaria/"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
 
 </details>
 
@@ -112,7 +111,7 @@ Project goal: Apply mobile first and all responsiveness tools for achieve best u
 Project goal: Redirect user to correct pages and render elements with API consumption (Github API).
 
 <a href="./src/S4_15/"> <img src="./src/assets/images/code_button.png"> </a> &nbsp; &nbsp;
-<a href="link_pages"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
+<a href="https://kenzie-academy-brasil-developers.github.io/Kenzie-Academy-Brasil-Developers-gitSearchBase-Luhmaria/"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
 
 </details>
 
@@ -140,7 +139,7 @@ Project goal: Render elements with API consumption (PokéAPI).
 Project goal: summarize all tolls learned until this point: API consumption, user redirect, ES modules, mobile first.
 
 <a href="./src/S6_07/"> <img src="./src/assets/images/code_button.png"> </a> &nbsp; &nbsp;
-<a href="link_pages"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
+<a href="https://kenzie-academy-brasil-developers.github.io/Kenzie-Academy-Brasil-Developers-petinfo-Luhmaria/"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
 
 </details>
 
@@ -158,6 +157,6 @@ Project goal: summarize all tolls learned on module with different users access 
 ->Employee user can view their teammates and edit their personal information.
 
 <a href="./src/S7_01/"> <img src="./src/assets/images/code_button.png"> </a> &nbsp; &nbsp;
-<a href="link_pages"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
+<a href="https://kenzie-academy-brasil-developers.github.io/Kenzie-Academy-Brasil-Developers-m2-projeto-frotend-empresas-Luhmaria/"> <img src="./src/assets/images/project_button.png"> </a> &nbsp; &nbsp;
 
 </details>
